@@ -1,0 +1,16 @@
+print("hello startcoding!")
+import random
+
+number = random.randint(1, 100) # 1부터 100까지의 랜덤한 숫자 생성
+
+guess = int(input("1부터 100 사이의 숫자를 맞춰보세요: "))
+
+while guess != number:
+    if guess < number:
+        print("숫자가 너무 작아요.")
+    else:
+        print("숫자가 너무 커요.")
+
+    guess = int(input("다시 시도해보세요: "))
+
+print("정답입니다! 숫자는", number, "였어요.")
